@@ -58,7 +58,7 @@ class HomeScreen extends StatelessWidget {
                         } else if (state is AdvicerOnLoadedState) {
                           return AdviceField(advice: state.advice);
                         } else if (state is AdvicerOnErrorState) {
-                          return const AdviceField(advice: 'error');
+                          return AdviceField(advice: state.message);
                         } else {
                           return const SizedBox();
                         }

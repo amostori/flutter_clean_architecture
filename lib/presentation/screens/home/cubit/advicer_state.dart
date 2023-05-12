@@ -16,4 +16,8 @@ class AdvicerOnLoadedState extends AdvicerState {
   AdvicerOnLoadedState({required this.advice});
 }
 
-class AdvicerOnErrorState extends AdvicerState {}
+class AdvicerOnErrorState extends AdvicerState {
+  final String message;
+
+  AdvicerOnErrorState({required this.message});
+}
