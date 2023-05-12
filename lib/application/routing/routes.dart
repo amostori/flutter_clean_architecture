@@ -10,11 +10,11 @@ class RouteGenerator {
     switch (routeSettings.name) {
       case Routes.homeRoute:
         return MaterialPageRoute(
-          builder: (_) => HomeScreen(),
+          builder: (_) => const HomeScreenWrapperProvider(),
         );
       default:
         return MaterialPageRoute(
-          builder: (_) => HomeScreen(),
+          builder: (_) => const HomeScreen(),
         );
     }
   }
